@@ -1,0 +1,9 @@
+{
+  "name": "TDD-Challenge",
+  "description": "Collection of TDD challenges",
+  "keywords": ["TDD challenges", "TDD", "challenges", "Learn TDD"],
+  "version": "1.0.0",
+  "main": "index.js",
+  "private":true,
+  "license": "MIT"
+}
