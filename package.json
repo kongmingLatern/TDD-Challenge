@@ -1,9 +1,20 @@
 {
   "name": "TDD-Challenge",
   "description": "Collection of TDD challenges",
-  "keywords": ["TDD challenges", "TDD", "challenges", "Learn TDD"],
+  "keywords": [
+    "TDD challenges",
+    "TDD",
+    "challenges",
+    "Learn TDD"
+  ],
   "version": "1.0.0",
   "main": "index.js",
-  "private":true,
-  "license": "MIT"
+  "private": true,
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^28.1.3"
+  },
+  "scripts": {
+    "test": "jest"
+  }
 }
