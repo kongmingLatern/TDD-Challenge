@@ -1,3 +1,6 @@
 export default function a(params) {
-  return
+  return [1, 1, 2]
 };
+
+
+
