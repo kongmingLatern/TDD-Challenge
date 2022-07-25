@@ -1,6 +1,6 @@
-export default function reactive<T>(target: any): Record<string, T> {
+export default function reactive<T extends Record<string, T>>(target: any): any {
   return new Proxy(target, {
-    get(target, key): T {
+    get(target, key): Pick<typeof target, typeof key> {
       return Reflect.get(target, key)
     },
     set(target, key, value) {
@@ -8,3 +8,12 @@ export default function reactive<T>(target: any): Record<string, T> {
     }
   })
 };
+
+// const obj = {
+//   a: 1,
+//   b: 2
+// }
+// type b = getKey<typeof obj>
+// const a = reactive({ b: 1 })
+
+// const c = reactive({ a: 1 })
