@@ -1,4 +1,4 @@
-import { isObject } from "./Frame-Challenge/Vue/utils";
+import { isObject } from ".";
 
 describe('utils', () => {
   it('isObject test1', () => {
