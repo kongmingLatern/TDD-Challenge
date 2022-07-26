@@ -20,7 +20,8 @@
     "jest": "^28.1.3"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "coverage": "jest --coverage"
   },
   "dependencies": {
     "typescript": "^4.7.4"
