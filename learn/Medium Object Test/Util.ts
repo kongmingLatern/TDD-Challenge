@@ -1,8 +1,8 @@
 export default class Util {
-  a() {
+  a(a: any) {
     // a lot of functions
   }
-  b() {
+  b(b: any) {
     // a lot of functions
   }
 }

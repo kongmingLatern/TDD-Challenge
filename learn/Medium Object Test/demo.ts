@@ -1,11 +1,9 @@
 import Util from "./util";
 
-type Func = (...args: any[]) => void
-
-const demoFunction = (a: Func, b: Func) => {
-  const utrl = new Util()
-  utrl.a()
-  utrl.b()
+const demoFunction = (a, b) => {
+  const util = new Util()
+  util.a(a)
+  util.b(b)
 }
 
 
