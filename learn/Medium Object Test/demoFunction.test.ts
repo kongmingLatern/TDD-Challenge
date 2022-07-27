@@ -12,7 +12,6 @@ import demoFunction from "./demoFunction"
 
 test('test demoFunction', () => {
   demoFunction(1, 2)
-  console.log(Util);
   expect(Util).toHaveBeenCalled()
   expect(Util.mock.instances[0].a).toHaveBeenCalled()
   expect(Util.mock.instances[0].b).toHaveBeenCalled()
