@@ -1,5 +1,14 @@
-describe('test toBe', () => {
-  it('Use .toBe to compare primitive values or to check referential identity of object instances. It calls Object.is to compare values, which is even better for testing than === strict equality operator.', () => {
-    expect(2).toBe(2)
+const can = {
+  name: 'pamplemousse',
+  ounces: 12,
+};
+
+describe('the can', () => {
+  test('has 12 ounces', () => {
+    expect(can.ounces).toBe(12);
+  });
+
+  test('has a sophisticated name', () => {
+    expect(can.name).toBe('pamplemousse');
   });
 });
